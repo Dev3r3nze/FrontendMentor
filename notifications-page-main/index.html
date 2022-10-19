@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="master.css">
+  
+  <title>Frontend Mentor | Notifications page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <div class="header">
+      <div class="col1">
+        <p id="title">Notifications</p>
+        <p id="number">3</p>
+      </div>
+      <div class="col" onclick="ReadAll()"><p>Mark all as read</p></div>
+      <script>
+        function ReadAll(){
+          var mensajes = [];
+          var circulos = [];
+          for(var i = 0; i < document.getElementsByClassName('messageUnopened').length; i++){
+            mensajes[i] = document.getElementsByClassName('messageUnopened')[i];
+            circulos[i] = document.getElementsByTagName('svg')[i];
+          }
+          for(var i = 0; i < mensajes.length; i++){
+            mensajes[i].className = 'messageOpened'
+            circulos[i].style.display = 'none';
+          }
+          document.getElementById('number').innerHTML = 0;
+        }
+      </script>
+    </div>
+  
+   <div class="messageUnopened">
+    <div class="colMessage"><div class="avatar"> <img src="assets/images/avatar-mark-webber.webp" alt=""> </div></div>
+    <div class="colMessage2">
+      <div class="text">
+        <p id="persona">Mark Webber</p> 
+        <p>reacted to your recent post</p> 
+        <p id="post">My first tournament today!</p>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 10 10">
+          <circle cx="5" cy="7" r="2" fill="hsl(1, 90%, 64%)"></circle>
+        </svg>
+      </div>
+      <div class="lastActive"><p>1m ago</p></div></div>
+   </div>
+
+   <div class="messageUnopened">
+    <div class="colMessage"><div class="avatar"> <img src="assets/images/avatar-angela-gray.webp" alt=""> </div></div>
+    <div class="colMessage2">
+      <div class="text">
+      <p id="persona">Angela Gray</p>
+      <p>followed you</p>
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 10 10">
+        <circle cx="5" cy="7" r="2" fill="hsl(1, 90%, 64%)"></circle>
+      </svg>
+    </div>
+    <div class="lastActive"><p>1m ago</p></div></div>
+  </div>
+
+  <div class="messageUnopened">
+    <div class="colMessage"><div class="avatar"> <img src="assets/images/avatar-jacob-thompson.webp" alt=""> </div></div>
+    <div class="colMessage2">
+      <div class="text">
+        <p id="persona">Jacob Thompson</p> 
+        <p>has joined your group</p> 
+        <p id="group">Chess Club</p>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 10 10">
+          <circle cx="5" cy="7" r="2" fill="hsl(1, 90%, 64%)"></circle>
+        </svg>
+      </div>
+        
+    <div class="lastActive"><p> 1 day ago</p></div></div>
+  </div>
+  
+  <div class="messageOpenedMessaging">
+    <div class="colMessage"><div class="avatar"> <img src="assets/images/avatar-rizky-hasanuddin.webp" alt=""> </div></div>
+    
+    <div class="colMessage2"><div class="text"><p id="persona">Rizky Hasanuddin</p> <p>sent you a private message</p></div>
+    <div class="lastActive"><p> 5 days ago</p></div>
+    <div class="contentMessage"><p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+      I'm already having lots of fun and improving my game.</p></div></div>
+  </div>
+  
+  <div class="messageOpened">
+    <div class="colMessage"><div class="avatar"> <img src="assets/images/avatar-kimberly-smith.webp" alt=""> </div></div>
+   
+    <div class="colMessage2"><div class="text"><p id="persona"> Kimberly Smith</p><p>commented on your picture</p> <img src="assets/images/image-chess.webp" alt=""></div>
+    <div class="lastActive" id="up"><p> 1 week ago</p></div></div>
+  </div>
+    
+  <div class="messageOpened">
+    <div class="colMessage"><div class="avatar"> <img src="assets/images/avatar-nathan-peterson.webp" alt=""> </div></div>
+    
+    <div class="colMessage2"><div class="text">
+      <div>
+        <p id="persona"> Nathan Peterson</p>
+        <p> reacted to your recent post </p>
+        <p id="post">5 end-game strategies to increase your win rate</p>
+      </div>
+    </div>
+    <div class="lastActive"><p> 2 weeks ago</p></div></div>
+  </div>
+    
+  <div class="messageOpened">
+    <div class="colMessage"><div class="avatar"> <img src="assets/images/avatar-anna-kim.webp" alt=""> </div></div>
+    
+    <div class="colMessage2"><div class="text"><p id="persona">Anna Kim</p><p>left the group</p><p id="group">Chess Club</p></p></div>
+    <div class="lastActive"><p> 2 weeks ago</p></div></div>
+  </div>
+</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">dev3r3nze</a>.
+  </div>
+</body>
+</html>
