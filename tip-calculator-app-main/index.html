@@ -15,26 +15,46 @@
   </style>
 </head>
 <body>
+  <div>
+    <div class="title"><p>SPLI</p><br><p>TTER</p></div>
+    <div class="col">
+      <div class="colContent">
+        <div class="row">
+          <p class="rowTitle">Bill</p>
+          <input class="rowContent" type="number">
+        </div>
+        <div class="row">
+          <p class="rowTitle">Select Tip %</p>
+          <div class="rowContent">
+            <button>5%</button>
+            <button>10%</button>
+            <button>15%</button>
+            <button>25%</button>
+            <button>50%</button>
+            <input class="customTip" value="Custom" type="number">
+          </div>
+        </div>
+        <div class="row">
+          <p class="rowTitle">Number of People</p>
+          <input type="number" class="rowContent">
+        </div>
+      </div>
 
-  Bill
+      <div class="colContent">
+        <div class="tip">
+          <p class="tipTittle"><p>Tip Amount</p><br><p>/ person</p></p>
+          <p class="tipResult"></p>
+        </div>
+        <div class="tip">
+          <p class="tipTittle"><p>Total</p><br><p>/ person</p></p>
+          <p class="tipResult"></p>
+        </div>
+        <button id="btnReset">Reset</button>
+      </div>
+    </div>
+  </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
