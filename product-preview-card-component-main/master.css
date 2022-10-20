@@ -78,6 +78,11 @@ body{
     align-items: center;
     justify-content: center;
 }
+#btn:hover{
+    background: hsl(158, 35%, 27%);
+    cursor: pointer;
+}
+
 #btn p{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
