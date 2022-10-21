@@ -1,0 +1,153 @@
+body{
+    background: hsl(185, 41%, 84%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Space Mono', monospace;
+
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+}
+
+.title{
+    text-align: center;
+    line-height: 1px;
+    margin-bottom: 5vh;
+}
+.title p {
+    margin-top: 3vh;
+    letter-spacing: 7px;
+}
+
+
+.col{
+    background: hsl(0, 0%, 100%);
+    display: flex;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.colContent{
+    margin: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row{
+    
+    position: relative;
+}
+
+.row input{
+    width: 100%;
+    height: 4vh;
+    margin-top: 1px;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 24px;
+    border: 0px;
+    background-color: hsl(189, 41%, 97%)
+
+}
+
+.row button{
+    width: 30%;
+    height: 3.5vh;
+    font-size: 24px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    color: hsl(189, 41%, 97%);
+    border: 0px;
+}
+
+.row button p {
+    transform: translateY(-3px);
+}
+
+
+.rowTitle{
+    color: hsl(184, 14%, 56%)
+}
+
+#rowContentBtns{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 10vh;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+#rowContentBtns input{
+    width: 29%;
+    height: 3vh;
+    text-align: right;
+    font-size: 20px;
+    border: 0px;
+    background-color: hsl(189, 41%, 97%)
+
+}
+
+#resultado{
+    background-color: hsl(183, 100%, 15%);
+    margin: 30px 30px 30px 0px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-content: space-around;
+    border-radius: 10px;
+    color: hsl(189, 41%, 97%);
+}
+
+
+#btnReset{
+    height: 5vh;
+    border-radius: 5px;
+    font-size: 24px;
+    background-color: hsl(183deg 79% 24%);
+    border: 0px;
+}
+
+.attribution{ 
+    margin: 100px;
+}
+
+.colTipI{
+    float: left;
+    color: hsl(184, 14%, 56%);
+    font-size: 11px;
+    
+}
+.colTipD{
+    float: right;
+    color: hsl(172, 67%, 45%);
+    font-size: 32px;
+
+}
+
+.tipTittle{
+    color: hsl(189, 41%, 97%);
+    font-size: 13px;
+}
+
+.col svg{
+    position: absolute;
+    left: 12px;
+    top: 57%;
+    
+}
