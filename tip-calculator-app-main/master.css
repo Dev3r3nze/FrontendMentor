@@ -60,8 +60,19 @@ body{
     text-align: right;
     font-size: 24px;
     border: 0px;
-    background-color: hsl(189, 41%, 97%)
+    background-color: hsl(189, 41%, 97%);
+    color:hsl(183, 100%, 15%);
+}
 
+input:focus, #rowContentBtns input:focus{
+    outline: unset;
+    border: 1px solid hsl(172, 67%, 45%);
+}
+
+#rowContentBtns button:hover{
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
 }
 
 .row button{
@@ -80,7 +91,18 @@ body{
 
 
 .rowTitle{
-    color: hsl(184, 14%, 56%)
+    color: hsl(184, 14%, 56%);
+    
+}
+#titlePersonas{
+    float: left;
+}
+
+#numberPeople{
+    float: right;
+    color: hsl(15deg 31% 58%);
+    font-size: 14px;
+    display: none;
 }
 
 #rowContentBtns{
@@ -94,7 +116,7 @@ body{
 
 #rowContentBtns input{
     width: 29%;
-    height: 3vh;
+    height: 3.5vh;
     text-align: right;
     font-size: 20px;
     border: 0px;
@@ -121,6 +143,7 @@ body{
     font-size: 24px;
     background-color: hsl(183deg 79% 24%);
     border: 0px;
+    color: hsl(183, 100%, 15%);
 }
 
 .attribution{ 
