@@ -1,0 +1,40 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+}
+
+#imgFondo{
+    height: 100vh;
+}
+
+#tarjetaFrontal{
+    
+    position: absolute;
+    
+    top: 20vh;
+    left: 16vh;
+}
+.tarjetaContent{
+    position: relative;
+    top: -210px;
+    left: 30px;
+}
+
+#tarjetaTrasera{
+    background: url(images/bg-card-back.png) no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 51vh;
+    left: 31vh;
+    }   
+
+.rowContent{
+    display: flex;
+    flex-direction: column;
+}
