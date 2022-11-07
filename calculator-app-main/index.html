@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Calculator app</title>
@@ -16,7 +16,55 @@
 </head>
 <body>
 
-
+  <div class="content">
+    <div class="row" id="top">
+      <p id="title">calc</p>
+      <div class="colTop">
+        <p>THEME</p>
+        <div id="theme">
+          <div id="themeNum">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+          </div id="themeInput">
+          <input type="range" min="1" max="3" value="1">
+        </div>
+      </div>
+    </div>
+    <div class="row" id="mid">
+      <input type="number">
+    </div>
+    <div class="row" id="bot">
+      <div class="rowBot" id="rowBot1">
+        <div class="btn">7</div>
+        <div class="btn">8</div>
+        <div class="btn">9</div>
+        <div class="btn">DEL</div>
+      </div>
+      <div class="rowBot" id="rowBot2">
+        <div class="btn">4</div>
+        <div class="btn">5</div>
+        <div class="btn">6</div>
+        <div class="btn">+</div>
+      </div>
+      <div class="rowBot" id="rowBot3">
+        <div class="btn">1</div>
+        <div class="btn">2</div>
+        <div class="btn">3</div>
+        <div class="btn">-</div>
+      </div>
+      <div class="rowBot" id="rowBot4">
+      <div class="btn">.</div>
+      <div class="btn">0</div>
+      <div class="btn">/</div>
+      <div class="btn">x</div>
+     </div>
+      <div>
+        <div class="btn" id="btnReset">RESET</div>
+        <div class="btn" id="btn=">=</div>    
+      </div>
+    </div>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

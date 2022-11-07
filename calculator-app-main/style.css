@@ -1,0 +1,67 @@
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    background: grey;
+}
+
+.row{
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.colTop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#theme{
+    text-align: center;
+}
+
+#themeNum{
+    display: flex;
+    justify-content: space-around;
+}
+#themeNum p{
+    float: left;
+    height: 1px;
+}
+#theme input{
+    width: 80%
+}
+
+.colTop{
+    display: flex;
+}
+
+#mid input{
+    width: 100%;
+    height: 5vh;
+}
+
+#bot{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.btn{
+    width: 5vh;
+    height: 3vh;
+    background: white;
+}
