@@ -9,16 +9,18 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: 'Inter', sans-serif;
+    color:  hsl(236, 13%, 42%);
 }
 #content{
     width: 80%;
-    height: 80vh;
+    height: 90vh;
 }
 #nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 5vh;
+    margin-bottom: 4vh;
 }
 .navCol{
     display: flex;
@@ -26,10 +28,12 @@ body{
 }
 .navCol p{
     margin: 0px 10px;
+    font-weight: 400;
+    
 }
 #main{
     display: grid;
-    gap: 4vh;
+    gap: 3vh;
 }
 #imageMain{
     grid-column: 1 / span 2;
@@ -40,12 +44,21 @@ body{
 }
 #titleMain p{
     font-size: 50px;
+    font-weight: 800;
+    color: hsl(240, 100%, 5%);
 }
 
 #descMain button{
     margin-top: 4vh;
     width: 16vh;
     height: 5vh;
+    font-weight: 700;
+    background-color: hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    border: 0px;
+    letter-spacing: 3px;
+    font-family: 'Inter', sans-serif;
+
 }
 
 #section{
@@ -55,53 +68,73 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background: #545454;
+    background: hsl(240, 100%, 5%);
     padding: 0vh;
 }
 
 #sectionTitle{
     font-size: 50px;
-    margin: 2vh;
+    margin: 0px 2vh 0px 2vh;
+
+    font-weight: 700;
+    color: hsl(35, 77%, 62%);
+}
+
+.separator{
+    height: 0px;
+    border: 1px solid hsl(233, 8%, 79%);
+    width: 80%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .titleNew{
-    margin: 2vh;
-    font-size: 30px;
+    margin: 0px 2vh 0px 2vh;
+    font-size: 25px;
+    font-weight: 700;
+    color: hsl(36, 100%, 99%);
 }
 
 .descNew{
-    margin: 2vh;
-
+    margin: 0px 2vh 0px 2vh;
+    color: hsl(233, 8%, 79%);
 }
 
 #footer{
     display: flex;
     margin-top: 5vh;
+    justify-content: space-between;
 }
 .relatedNew{
-    
+    width: 30%;
     height: 15vh;
     display: flex;
     justify-content: space-between;
 }
 .colRelatedImg{
-    width: 50%;
+    width: 30%;
 }
 .colRelatedImg img{
     height: 100%;
 }
 .colRelated{
     display: flex;
-    width: 60%;
+    width: 70%;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .numberRelated{
     font-size: 30px;
+    font-weight: 700;
+    color: hsl(233, 8%, 79%);
 }
 .titleRelated{
     font-size: 20px;
+    color: hsl(240, 100%, 5%);
+    font-weight: 700;
+
 }
 .descRelated{
     font-size: 16px;
