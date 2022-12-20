@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | News homepage</title>
@@ -16,41 +16,77 @@
 </head>
 <body>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+  <div id="content">
+    <div id="nav">
+      <div class="navCol">
+        <img src="assets/images/logo.svg" alt="">
+      </div>
+      <div class="navCol">
+        <p>Home</p>
+        <p>New</p>
+        <p>Popular</p>
+        <p>Trending</p>
+        <p>Categories</p>
+      </div>
+    </div>
 
-  The Bright Future of Web 3.0?
+    <div id="main">
+      <div id="imageMain">
+        <img src="assets/images/image-web-3-desktop.jpg" alt="">
+      </div>
+      <div id="titleMain">
+        <p>The Bright Future of Web 3.0?</p>
+      </div>
+      <div id="descMain">
+        <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+          But is it really fulfilling its promise?</p>
+        <button>Read more</button>
+      </div>
+      <div id="section">
+        <p id="sectionTitle">New</p>
+        <p class="titleNew">Hydrogen VS Electric Cars</p>
+        <p class="descNew">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        <p class="titleNew">The Downsides of AI Artistry</p>
+        <p class="descNew">What are the possible adverse effects of on-demand AI image generation?</p>
+        <p class="titleNew">Is VC Funding Drying Up?</p>
+        <p class="descNew">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div>
+    </div>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+    <div id="footer">
+      <div class="relatedNew">
+        <div class="colRelatedImg">
+          <img src="assets/images/image-retro-pcs.jpg" alt="">
+        </div>
+        <div class="colRelated">
+          <p class="numberRelated">01</p>
+          <p class="titleRelated">Reviving Retro PCs</p>
+          <p class="descRelated">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="relatedNew">
+        <div class="colRelatedImg">
+          <img src="assets/images/image-top-laptops.jpg" alt="">
+        </div>
+        <div class="colRelated">
+          <p class="numberRelated">02</p>
+          <p class="titleRelated">Top 10 Laptops of 2022</p>
+          <p class="descRelated">Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+      <div class="relatedNew">
+        <div class="colRelatedImg">
+          <img src="assets/images/image-gaming-growth.jpg" alt="">
+        </div>
+        <div class="colRelated">
+          <p class="numberRelated">03</p>
+          <p class="titleRelated">The Growth of Gaming</p>
+          <p class="descRelated">How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </div>
 
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

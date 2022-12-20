@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#content{
+    width: 80%;
+    height: 80vh;
+}
+#nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+}
+.navCol{
+    display: flex;
+    align-items: center;
+}
+.navCol p{
+    margin: 0px 10px;
+}
+#main{
+    display: grid;
+    gap: 4vh;
+}
+#imageMain{
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+#imageMain img{
+    width: 100%;
+}
+#titleMain p{
+    font-size: 50px;
+}
+
+#descMain button{
+    margin-top: 4vh;
+    width: 16vh;
+    height: 5vh;
+}
+
+#section{
+    grid-column: 3;
+    grid-row: 1 / span 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #545454;
+    padding: 0vh;
+}
+
+#sectionTitle{
+    font-size: 50px;
+    margin: 2vh;
+}
+
+.titleNew{
+    margin: 2vh;
+    font-size: 30px;
+}
+
+.descNew{
+    margin: 2vh;
+
+}
+
+#footer{
+    display: flex;
+    margin-top: 5vh;
+}
+.relatedNew{
+    
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+}
+.colRelatedImg{
+    width: 50%;
+}
+.colRelatedImg img{
+    height: 100%;
+}
+.colRelated{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.numberRelated{
+    font-size: 30px;
+}
+.titleRelated{
+    font-size: 20px;
+}
+.descRelated{
+    font-size: 16px;
+}
+.attribution{
+    position: absolute;
+    bottom: 4px;
+}
