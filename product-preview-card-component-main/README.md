@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://productoverview.vercel.app/)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/product-preview-pr5GRer6l4)
+- Live Site URL: [Live](https://productoverview.vercel.app/)
 
 ## My process
 
