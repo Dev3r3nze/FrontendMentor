@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/tips-calculator-Ho9wOb8CeP)
-- Live Site URL: [Add live site URL here](https://tipscalculator.vercel.app/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/tips-calculator-Ho9wOb8CeP)
+- Live Site URL: [Live](https://dev3r3nze.github.io/FrontendMentor/tip-calculator-app-main)
 
 ## My process
 
